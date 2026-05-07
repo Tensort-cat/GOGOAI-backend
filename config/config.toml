@@ -1,0 +1,48 @@
+# 请将聊天模型的OPENAI_API_KEY, OPENAI_BASE_URL, OPENAI_MODEL_NAME 配置在系统环境变量中, 程序中会用 os.Getenv() 来引用
+
+[mainConfig]
+appName = "GOGOAI"
+host = "0.0.0.0"
+port = 9090
+
+[emailConfig]
+authcode = "your authcode"
+email = "your email"
+
+[redisConfig]
+host = "127.0.0.1"
+port = 6379
+password = ""
+db = 0
+
+[mysqlConfig]
+host = "你的 mysql 地址"
+port = 你的mysql端口
+user = ""
+password = ""
+databaseName = "GOGOAI"
+charset =  "utf8mb4"
+
+[jwtConfig]
+expire_duration= 8760
+issuer= "Amamiyayuko"
+subject= "GOGOAI"
+key= "GOGOAI"
+
+[rabbitmqConfig]
+host= "你的 rabbitMQ 地址"
+port= 你的 rabbitMQ 端口
+username= ""
+password= ""
+vhost= "/"
+
+[ragModelConfig] # 我用的腾讯混元，根据自己用的换
+embeddingModel= "hunyuan-embedding"
+chatModelName="hunyuan-turbos-latest"
+docDir = "./docs"
+baseUrl="https://api.hunyuan.cloud.tencent.com/v1"
+dimension=1024
+
+[voiceServiceConfig] # 百度的 TTS 服务，去官网免费申请
+voiceServiceApiKey = ""
+voiceServiceSecretKey = ""
