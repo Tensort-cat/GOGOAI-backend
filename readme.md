@@ -149,3 +149,10 @@ GOGOAI-/
 - RabbitMQ 异步消息处理
 
 ---
+
+## TODO
+
+- RAG 模块文档分块 (采用 Recursive Chunk)
+- 技能系统 (Skills)
+- 最近会话内容缓存 (Redis 实现)
+- MCP 接入更多外部工具 (比如邮件 MCP 和地图/本地生活 MCP)
